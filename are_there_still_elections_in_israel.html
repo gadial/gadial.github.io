@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<style>
+h1, h2 {text-align: center;}
+h1 {font-size: 300%;}
+h2 {font-size: 500%;}
+</style>
+<script>
+function answer() {
+	if (Math.random() > 0.5){
+		answerText = "כן";
+	} else {
+		answerText = "לא";
+	}
+  document.getElementById("answer").innerHTML = answerText;
+}
+</script>
+</head>
+<body onload="answer()">
+<h1>האם עדיין יש בחירות בישראל?</h1>
+<h2 id="answer"></h2>
+</body>
+</html>
